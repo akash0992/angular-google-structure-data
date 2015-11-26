@@ -1,9 +1,9 @@
 /**
  * @author: Deepak Vishwakarma
- * @version: 0.0.1
+ * @version: 0.0.2
  * @copyright: deepak.m.shrma@gmail.com
  */
-(function (window, document, angular, undefined) {
+(function (window, angular, undefined) {
     'use strict';
     angular.module('ngGoogleStructureData', [])
         .provider('GoogleStructureData', function () {
@@ -35,6 +35,22 @@
             }];
         })
         .directive('ngStructureData', function ($filter) {
+            function getArticleJson(content, type) {
+                var ldJson = {
+                    "@context": "http://schema.org/",
+                    "@type": 'NewsArticle' || type,
+                    "description": content.description || '',
+                    "headline": content.headline || '',
+                    "datePublished": $filter('date')(content.datePublished || Date.now(), 'yyyy-MM-dd HH:mm:ss Z'),
+                    "alternativeHeadline": content.alternativeHeadline || '',
+                    "articleBody": content.alternativeHeadline || ''
+                };
+                if (content.image) {
+                    ldJson.image = [].concat(content.image);
+                }
+                return ldJson;
+            }
+
             function getRecipeJson(content, type) {
                 var ldJson = {
                     "@context": "http://schema.org/",
@@ -52,7 +68,7 @@
                     }
                 }
                 if (content.datePublished) {
-                    ldJson.datePublished = $filter('date')(content.datePublished, 'yyyy-MM-dd HH:mm:ss Z');
+                    ldJson.datePublished = $filter('date')(content.datePublished || Date.now(), 'yyyy-MM-dd HH:mm:ss Z');
                 }
                 if (!content.prepTime) {
                     content.prepTime = 0;
@@ -94,7 +110,6 @@
                 }
                 return ldJson;
             }
-
             return {
                 restrict: 'A',
                 scope: {
@@ -102,7 +117,7 @@
                     content: '='
                 },
                 link: function ($scope, element) {
-                    var acceptableTypes = ['Recipe'], ldJson;
+                    var acceptableTypes = ['Recipe', 'NewsArticle'], ldJson;
                     if (!$scope.structType || acceptableTypes.indexOf($scope.structType) < 0) {
                         console.info('ngStructureData: Either structType is not define Or not supported!');
                         return;
@@ -115,6 +130,9 @@
                     switch ($scope.structType) {
                         case 'Recipe':
                             ldJson = getRecipeJson($scope.content);
+                            break;
+                        case 'NewsArticle':
+                            ldJson = getArticleJson($scope.content);
                             break;
                     }
                     element.html(JSON.stringify(ldJson));

@@ -24,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="angular-google-structure-data.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="angular-google-structure-data.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/angular-google-structure-data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="2210">
-              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0543131" vertical-offset="0" max-vertical-offset="2516">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bower.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53833336" vertical-offset="0" max-vertical-offset="629">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="629">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -73,9 +73,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/js/angular-google-structure-data.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/js/angular-google-structure-data.js" />
       </list>
     </option>
   </component>
@@ -250,7 +250,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61408883" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3078101" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52220523" sideWeight="0.41912907" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52220523" sideWeight="0.41912907" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2667185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -301,18 +301,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/angular-google-structure-data.js">
+    <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1584" max-vertical-offset="2210">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53833336" vertical-offset="0" max-vertical-offset="629">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="629">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/angular-google-structure-data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0543131" vertical-offset="0" max-vertical-offset="2516">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
